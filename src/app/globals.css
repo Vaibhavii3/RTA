@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f2847;
+  --color-primary-light: #1a3d6b;
+  --color-primary-dark: #091a30;
+  --color-accent: #c9a227;
+  --color-accent-light: #e0bc4a;
+  --color-accent-dark: #a8861f;
+  --color-cream: #faf7f2;
+  --color-sky: #e8f0fa;
+  --color-sky-dark: #d4e4f7;
+  --color-warm-gray: #6b7280;
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-primary-dark);
+  background-color: var(--color-cream);
+}
+
+.section-heading {
+  font-family: var(--font-display);
+}
+
+.section-badge {
+  @apply inline-block text-xs font-bold uppercase tracking-widest text-primary-light;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-primary-dark shadow-md transition-all hover:bg-accent-light hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-primary bg-transparent px-6 py-3 font-semibold text-primary transition-all hover:bg-primary hover:text-white;
+}
+
+.btn-blue {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-white shadow-md transition-all hover:bg-primary-light hover:shadow-lg;
+}
+
+.btn-outline-white {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-white bg-transparent px-6 py-3 font-semibold text-white transition-all hover:bg-white hover:text-primary;
+}
+
+.card {
+  @apply rounded-2xl bg-white shadow-md transition-all duration-300 hover:shadow-xl;
+}
+
+.card-hover {
+  @apply rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+}
+
+.gradient-hero {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-dark) 0%,
+    var(--color-primary) 50%,
+    var(--color-primary-light) 100%
+  );
+}
+
+.gradient-sky {
+  background: linear-gradient(180deg, var(--color-sky) 0%, var(--color-cream) 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, var(--color-accent-dark), var(--color-accent), var(--color-accent-light));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon-box {
+  @apply flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary;
+}
+
+.check-item {
+  @apply flex items-start gap-3 text-sm text-warm-gray;
+}
+
+.check-mark {
+  @apply flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent text-xs font-bold text-primary-dark;
+}
+
+.hero-dash {
+  width: 120px;
+  height: 0;
+  border-top: 2px dashed #9ca3af;
+}
+
+.btn-outline-accent {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-accent bg-transparent px-6 py-3 font-semibold text-primary transition-all hover:bg-accent hover:text-primary-dark;
+}
