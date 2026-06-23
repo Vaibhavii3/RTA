@@ -70,7 +70,7 @@ export const homeExtras: Record<Locale, HomeExtras> = {
       desc: "We build careers through structured academics, hands-on lab training, personality development, and dedicated placement support for every student.",
       cards: [
         { title: "Academic Programs", desc: "Structured Certificate, Diploma & Advanced Diploma courses aligned with industry needs." },
-        { title: "100% Placement Assistance", desc: "Dedicated career cell with international tie-ups in Maldives, Kuwait, Europe & beyond. 230+ students placed." },
+        { title: "100% Placement Assistance", desc: "Dedicated career cell with tie-ups in Australia, New Zealand, Europe, USA, Canada, Middle East & beyond. 230+ students placed." },
         { title: "Hands-On Practical Training", desc: "Kitchen Labs, Front Office Suites, and Mock Bar setups for real-world readiness." },
         { title: "Short-Term Skill Courses", desc: "Barista Training (45 days), Bartender Certification, F&B Service & more." },
       ],
@@ -93,7 +93,7 @@ export const homeExtras: Record<Locale, HomeExtras> = {
       checks: [
         "100% Placement Assistance",
         "Mandatory Industry Internships",
-        "International Tie-Ups (Maldives, Dubai, Europe)",
+        "International Tie-Ups (Australia, New Zealand, USA, Canada, Middle East & more)",
         "Personality & English Development",
       ],
       bookCounseling: "Book Free Career Counseling",
@@ -162,7 +162,7 @@ export const homeExtras: Record<Locale, HomeExtras> = {
         },
         {
           q: "Do you provide placement assistance?",
-          a: "Yes! We offer 100% placement support with mandatory internships. Our students are placed in Maldives, Kuwait, Dubai, Europe, Singapore, and cruise lines worldwide.",
+          a: "Yes! We offer 100% placement support with mandatory internships. Our students are placed in Australia, New Zealand, Europe, USA, Canada, Middle East, and cruise lines worldwide.",
         },
         {
           q: "Where are your students placed?",
@@ -206,7 +206,7 @@ export const homeExtras: Record<Locale, HomeExtras> = {
       desc: "हम संरचित शिक्षा, व्यावहारिक लैब प्रशिक्षण, व्यक्तित्व विकास और समर्पित प्लेसमेंट सहायता के माध्यम से करियर बनाते हैं।",
       cards: [
         { title: "शैक्षणिक कार्यक्रम", desc: "उद्योग-संरेखित सर्टिफिकेट, डिप्लोमा और एडवांस्ड डिप्लोमा कोर्स।" },
-        { title: "100% प्लेसमेंट सहायता", desc: "मालदीव, कुवैत, यूरोप में अंतर्राष्ट्रीय संबंध। 230+ छात्र नियुक्त।" },
+        { title: "100% प्लेसमेंट सहायता", desc: "ऑस्ट्रेलिया, न्यूज़ीलैंड, यूरोप, USA, कनाडा, मध्य पूर्व में अंतर्राष्ट्रीय संबंध। 230+ छात्र नियुक्त।" },
         { title: "व्यावहारिक प्रशिक्षण", desc: "किचन लैब, फ्रंट ऑफिस सुइट और मॉक बार सेटअप।" },
         { title: "अल्पकालिक कौशल कोर्स", desc: "बैरिस्टा (45 दिन), बारटेंडर, F&B सेवा और अधिक।" },
       ],

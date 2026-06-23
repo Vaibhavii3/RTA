@@ -12,7 +12,27 @@ import { courseIds } from "@/i18n/translations";
 import { useLanguage } from "@/context/LanguageContext";
 import { useHomeExtras } from "@/hooks/useHomeExtras";
 
-const whyIcons = ["🔬", "💼", "🌐"];
+const whyIcons = [
+  // Hands-On Lab Training — flask/beaker
+  <svg key="lab" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7 text-primary">
+    <path d="M9 3h6" />
+    <path d="M10 3v6l-4 9a1 1 0 0 0 .9 1.45h10.2A1 1 0 0 0 18 18l-4-9V3" />
+    <path d="M7.8 13.5h8.4" />
+  </svg>,
+  // 100% Placement Support — briefcase
+  <svg key="brief" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7 text-primary">
+    <rect width="20" height="13" x="2" y="7" rx="2" />
+    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+    <path d="M2 13h20" />
+    <path d="M12 13v4" />
+  </svg>,
+  // International Standards — globe
+  <svg key="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7 text-primary">
+    <circle cx="12" cy="12" r="9" />
+    <path d="M3 12h18" />
+    <path d="M12 3a14 14 0 0 0 0 18 14 14 0 0 0 0-18" />
+  </svg>,
+];
 
 const svgIconProps = {
   viewBox: "0 0 24 24",
@@ -154,7 +174,7 @@ const destinations = [
     name: "Cruise Lines",
     tag: "High Demand",
     desc: "Work aboard luxury international cruise fleets sailing across the globe.",
-    img: "https://images.unsplash.com/photo-1599640842225-85d111c60e6b?w=900&q=80",
+    img: "/images/opp/cruise.jpg",
     icon: (
       <svg {...destSvg} className="h-5 w-5">
         <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
@@ -168,7 +188,7 @@ const destinations = [
     name: "Europe",
     tag: "Premium",
     desc: "Michelin-starred restaurants, historic castles and luxury alpine resorts.",
-    img: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80",
+    img: "/images/opp/europe.jpg",
     icon: (
       <svg {...destSvg} className="h-5 w-5">
         <path d="M3 22h18" />
@@ -181,7 +201,7 @@ const destinations = [
     name: "New Zealand",
     tag: "Work + Settle",
     desc: "Growing hospitality sector with strong work and residency pathways.",
-    img: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=900&q=80",
+    img: "/images/opp/new-zealand.jpg",
     icon: (
       <svg {...destSvg} className="h-5 w-5">
         <path d="M3 20h18L13.5 6a1.8 1.8 0 0 0-3 0L3 20Z" />
@@ -193,7 +213,7 @@ const destinations = [
     name: "Dubai, UAE",
     tag: "Tax Benefits",
     desc: "Tax-free luxury hospitality hub with world-class hotels and resorts.",
-    img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80",
+    img: "/images/opp/dubai.jpg",
     icon: (
       <svg {...destSvg} className="h-5 w-5">
         <rect width="16" height="20" x="4" y="2" rx="2" />
@@ -206,7 +226,7 @@ const destinations = [
     name: "Singapore",
     tag: "Global Hub",
     desc: "Asian luxury & fine dining capital with worldwide career exposure.",
-    img: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=900&q=80",
+    img: "/images/opp/singapore.jpg",
     icon: (
       <svg {...destSvg} className="h-5 w-5">
         <circle cx="12" cy="12" r="9" />
@@ -219,7 +239,7 @@ const destinations = [
     name: "Maldives",
     tag: "Island Paradise",
     desc: "World-famous island resorts offering unique luxury hospitality experiences.",
-    img: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=900&q=80",
+    img: "/images/opp/maldives.jpg",
     icon: (
       <svg {...destSvg} className="h-5 w-5">
         <path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4" />
@@ -336,7 +356,7 @@ export default function HomeContent() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
-              <Image src={sectionImages.training} alt={extras.training.title} fill className="object-cover" sizes="50vw" />
+              <Image src={sectionImages.training} alt={extras.training.title} fill className="object-cover" sizes="50vw" unoptimized />
             </div>
             <div>
               <span className="section-badge">{extras.training.badge}</span>
@@ -620,13 +640,17 @@ export default function HomeContent() {
               </div>
             </div>
             <div className="relative aspect-video overflow-hidden rounded-3xl shadow-xl">
-              <Image src={sectionImages.whyChoose} alt="RITM" fill className="object-cover" sizes="50vw" />
+              <Image src={sectionImages.whyChoose} alt="RITM" fill className="object-cover" sizes="50vw" unoptimized />
             </div>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
             {extras.whySection.cards.map((card, i) => (
               <div key={card.title} className="card-hover p-6 text-center">
-                <span className="text-3xl">{whyIcons[i]}</span>
+                <div className="flex justify-center">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent/10">
+                    {whyIcons[i]}
+                  </div>
+                </div>
                 <h4 className="mt-3 font-bold text-primary">{card.title}</h4>
                 <p className="mt-2 text-sm text-warm-gray">{card.desc}</p>
               </div>

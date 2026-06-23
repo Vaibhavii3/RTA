@@ -33,7 +33,7 @@ export const courses: Course[] = [
     description:
       "Our program starts with 6 months of foundational multi-departmental training, practicals, and English-focused personality development, followed by advanced departmental specialization. We offer 100% placement and the unique opportunity to apply for overseas Job Training (JT), with travel and training costs calculated at actuals during the program.",
     highlight: "Overseas Job Training Opportunity",
-    image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=80",
+    image: "/images/opp/hospitality.jpg",
     imageAlt: "International hospitality training at RITM",
     icon: "global",
   },
@@ -45,7 +45,7 @@ export const courses: Course[] = [
     description:
       "Our program is a fast-track, cost-effective program that bypasses years of university to get you job-ready in just one year. It delivers intense, practical training in core hotel operations alongside vital English communication and personality grooming. With built-in industry internships, it serves as an immediate launchpad for high-demand, global careers in luxury resorts, cruise lines, and fine dining.",
     highlight: "Fast-Track to Global Careers",
-    image: "https://images.unsplash.com/photo-1566073770669-52b34306321c?w=900&q=80",
+    image: "/images/hero/R-1%20(2).jpg",
     imageAlt: "Hotel management and front office training",
     icon: "hotel",
   },
@@ -69,7 +69,7 @@ export const courses: Course[] = [
     description:
       "The program delivers rapid, highly focused technical training that transforms coffee passion into a lucrative, globally recognized career. In just a short time, you master espresso mechanics, milk texturing, latte art, and high-volume café management alongside crucial customer service and English communication skills. It serves as an immediate pathway to high-paying jobs in premium coffee chains, luxury hotels, cruise lines, and international hospitality venues worldwide.",
     highlight: "100% Placement Guaranteed",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80",
+    image: "/images/opp/barista.jpg",
     imageAlt: "Professional barista certification training",
     icon: "barista",
   },
@@ -81,7 +81,7 @@ export const courses: Course[] = [
     description:
       "The Course provides rapid, intensive practical training in mixology, flair bartending, and beverage management to launch a dynamic global career. It equips you with precise recipe mastery, speed, and polished English communication skills to excel under pressure in fast-paced environments. This qualification serves as an immediate gateway to high-earning, high-demand positions in luxury resorts, premium nightclubs, and international cruise lines worldwide.",
     highlight: "Global Bartending Career",
-    image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=900&q=80",
+    image: "/images/opp/bartender.jpg",
     imageAlt: "International bartender course training",
     icon: "bartender",
   },

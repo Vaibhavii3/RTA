@@ -4,6 +4,8 @@ import QuickInquiryForm from "@/components/QuickInquiryForm";
 import { instituteInfo } from "@/data/institute";
 import { useLanguage } from "@/context/LanguageContext";
 
+const svgProps = { fill: "none", stroke: "currentColor", strokeWidth: 1.7, viewBox: "0 0 24 24", strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
+
 export default function ContactContent() {
   const { t } = useLanguage();
 
@@ -27,7 +29,11 @@ export default function ContactContent() {
 
               <div className="mt-6 space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-accent">📞</span>
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent/10">
+                    <svg {...svgProps} className="h-4 w-4 text-accent-dark">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.06 6.06l1.62-1.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
                   <div>
                     <p className="text-sm font-medium text-primary">{t.common.phone}</p>
                     <a href={`tel:${instituteInfo.phone}`} className="text-sm text-warm-gray hover:text-accent-dark">
@@ -36,7 +42,12 @@ export default function ContactContent() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-accent">✉️</span>
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent/10">
+                    <svg {...svgProps} className="h-4 w-4 text-accent-dark">
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                  </div>
                   <div>
                     <p className="text-sm font-medium text-primary">{t.common.email}</p>
                     <a href={`mailto:${instituteInfo.email}`} className="text-sm text-warm-gray hover:text-accent-dark">
@@ -45,7 +56,12 @@ export default function ContactContent() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-accent">📍</span>
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent/10">
+                    <svg {...svgProps} className="h-4 w-4 text-accent-dark">
+                      <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </div>
                   <div>
                     <p className="text-sm font-medium text-primary">{t.common.address}</p>
                     <p className="text-sm text-warm-gray">{t.institute.address}</p>
@@ -64,6 +80,39 @@ export default function ContactContent() {
                 </svg>
                 {t.common.chatWhatsApp}
               </a>
+            </div>
+
+            {/* UP Division */}
+            <div className="card mt-6 p-6 lg:p-8">
+              <div className="flex items-center gap-2">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent/10">
+                  <svg {...svgProps} className="h-4 w-4 text-accent-dark">
+                    <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <h2 className="section-heading text-lg font-semibold text-primary">{instituteInfo.upDivision.name}</h2>
+              </div>
+              <p className="mt-3 text-sm text-warm-gray">{instituteInfo.upDivision.address}</p>
+              <div className="mt-4 space-y-3">
+                <div className="flex items-center gap-3">
+                  <svg {...svgProps} className="h-4 w-4 shrink-0 text-accent-dark">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.06 6.06l1.62-1.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  <a href={`tel:${instituteInfo.upDivision.phone}`} className="text-sm text-warm-gray hover:text-accent-dark">
+                    {instituteInfo.upDivision.phone}
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <svg {...svgProps} className="h-4 w-4 shrink-0 text-accent-dark">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  <a href={`mailto:${instituteInfo.upDivision.email}`} className="text-sm text-warm-gray hover:text-accent-dark">
+                    {instituteInfo.upDivision.email}
+                  </a>
+                </div>
+              </div>
             </div>
 
             <div className="mt-6 overflow-hidden rounded-2xl shadow-lg">

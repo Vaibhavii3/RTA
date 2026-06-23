@@ -16,7 +16,7 @@ export const placements: Placement[] = [
     company: "Taj Exotica Resort",
     location: "Maldives",
     flag: "🇲🇻",
-    bgImage: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80",
+    bgImage: "/images/opp/maldives.jpg",
   },
   {
     id: "2",
@@ -25,7 +25,7 @@ export const placements: Placement[] = [
     company: "Jumeirah Beach Hotel",
     location: "Dubai, UAE",
     flag: "🇦🇪",
-    bgImage: "https://images.unsplash.com/photo-1566073770669-52b34306321c?w=600&q=80",
+    bgImage: "/images/opp/dubai.jpg",
   },
   {
     id: "3",
@@ -34,7 +34,7 @@ export const placements: Placement[] = [
     company: "Marriott International",
     location: "Kuwait",
     flag: "🇰🇼",
-    bgImage: "https://images.unsplash.com/photo-1564501049412-61c3a3083791?w=600&q=80",
+    bgImage: "/images/hero/R-1%20(3).jpg",
   },
   {
     id: "4",
@@ -43,7 +43,7 @@ export const placements: Placement[] = [
     company: "Hilton Garden Inn",
     location: "London, UK",
     flag: "🇬🇧",
-    bgImage: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80",
+    bgImage: "/images/opp/europe.jpg",
   },
   {
     id: "5",
@@ -52,7 +52,7 @@ export const placements: Placement[] = [
     company: "Royal Caribbean Cruises",
     location: "International Waters",
     flag: "🚢",
-    bgImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80",
+    bgImage: "/images/opp/cruise.jpg",
   },
   {
     id: "6",
@@ -61,7 +61,7 @@ export const placements: Placement[] = [
     company: "ITC Grand Bharat",
     location: "India",
     flag: "🇮🇳",
-    bgImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",
+    bgImage: "/images/hero/R-1%20(1).jpg",
   },
   {
     id: "7",
@@ -70,7 +70,7 @@ export const placements: Placement[] = [
     company: "Oberoi Hotels",
     location: "Switzerland",
     flag: "🇨🇭",
-    bgImage: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&q=80",
+    bgImage: "/images/opp/bartender.jpg",
   },
   {
     id: "8",
@@ -79,6 +79,6 @@ export const placements: Placement[] = [
     company: "Starbucks Reserve",
     location: "Singapore",
     flag: "🇸🇬",
-    bgImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80",
+    bgImage: "/images/opp/barista.jpg",
   },
 ];

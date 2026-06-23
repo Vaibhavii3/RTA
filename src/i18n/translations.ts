@@ -154,8 +154,8 @@ export const translations: Record<Locale, Translations> = {
       name: "Raboche Institute of Technology & Management",
       nameLine1: "Raboche Institute of",
       nameLine2: "Technology & Management",
-      affiliation: "Affiliation details will be updated shortly.",
-      address: "Uttarakhand, India",
+      affiliation: "Affiliated with CPISD (Career Point Institute of Skill Development) Training Centre # TC427595",
+      address: "RITM, Lane Nagar Niwas, Prateet Nagar Dandi, Raiwala, Dehradun, Uttarakhand - 248205",
     },
     nav: {
       home: "Home",
@@ -192,7 +192,7 @@ export const translations: Record<Locale, Translations> = {
       heroLine1: "Hospitality is your",
       heroLine2: "Career.",
       heroGetInfo: "Get Information",
-      heroApplyIntake: "Apply for June Intake",
+      heroApplyIntake: "Apply for Next Intake",
       heroTitle: "Shape Your Global Hospitality Career",
       heroPara1:
         "From intensive diplomas to fast-track certifications, our curriculum blends hands-on lab training, international hospitality standards, and mandatory internships to ensure you graduate job-ready from day one.",
@@ -364,7 +364,7 @@ export const translations: Record<Locale, Translations> = {
       titleLine2: "Fame",
       title: "Wall of Fame",
       subtitle:
-        "Our biggest strength — students placed in premium hotels and international destinations including Maldives, Kuwait, Dubai, Europe, and cruise lines worldwide.",
+        "Our biggest strength — students placed in premium hotels and international destinations including Australia, New Zealand, Europe, USA, Canada, Middle East, and cruise lines worldwide.",
       exploreSuccess: "Explore Success Stories",
       alumniProud: "Our Proud",
       alumniNetwork: "Alumni Network",
@@ -423,8 +423,8 @@ export const translations: Record<Locale, Translations> = {
       name: "रबोचे इंस्टीट्यूट ऑफ टेक्नोलॉजी एंड मैनेजमेंट",
       nameLine1: "रबोचे इंस्टीट्यूट ऑफ",
       nameLine2: "टेक्नोलॉजी एंड मैनेजमेंट",
-      affiliation: "संबद्धता विवरण शीघ्र अपडेट किया जाएगा।",
-      address: "उत्तराखंड, भारत",
+      affiliation: "CPISD (Career Point Institute of Skill Development) Training Centre # TC427595 से संबद्ध",
+      address: "RITM, Lane Nagar Niwas, Prateet Nagar Dandi, Raiwala, Dehradun, Uttarakhand - 248205",
     },
     nav: {
       home: "होम",
@@ -461,7 +461,7 @@ export const translations: Record<Locale, Translations> = {
       heroLine1: "हॉस्पिटैलिटी आपका",
       heroLine2: "करियर है।",
       heroGetInfo: "जानकारी प्राप्त करें",
-      heroApplyIntake: "जून इनटेक के लिए आवेदन करें",
+      heroApplyIntake: "अगले इनटेक के लिए आवेदन करें",
       heroTitle: "अपना वैश्विक हॉस्पिटैलिटी करियर बनाएं",
       heroPara1:
         "गहन डिप्लोमा से लेकर फास्ट-ट्रैक प्रमाणपत्र तक, हमारा पाठ्यक्रम व्यावहारिक लैब प्रशिक्षण, अंतर्राष्ट्रीय हॉस्पिटैलिटी मानकों और अनिवार्य इंटर्नशिप को मिलाकर आपको पहले दिन से नौकरी के लिए तैयार करता है।",

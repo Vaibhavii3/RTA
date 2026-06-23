@@ -37,7 +37,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "g5",
-    src: "https://images.unsplash.com/photo-1599640842225-85d111c60e6b?w=900&q=80",
+    src: "/images/opp/cruise.jpg",
     title: "Cruise Training",
     subtitle: "Global hospitality exposure",
     category: "cruise",
